@@ -1,0 +1,484 @@
+@font-face {
+  font-family: "Red hat";
+  src: url(fonts/RedHatDisplay.ttf);
+}
+
+* {
+  font-family: "Red hat";
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* Adjust this to match the header height */
+}
+
+/* Parent container that holds both slider and header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(200%);
+  animation: slide 50s linear infinite;
+  gap: 200px;
+}
+
+.slider div {
+  flex-shrink: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-track div h3 {
+  margin: 0;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dffd19;
+}
+
+.header .goToAccessories {
+  text-decoration: underline;
+}
+
+.header div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+
+.header div h2 {
+  margin: 0;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  padding: 11.25px 15px 11.25px 0;
+}
+
+.header div p {
+  margin: 0;
+  cursor: pointer;
+  padding: 15.75px;
+}
+
+/*cart*/
+.cart {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  display: none;
+}
+
+.cart.active {
+  display: flex;
+}
+
+.cart .cartTitle {
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.cart div:nth-child(1) {
+  width: 70%;
+  height: 92vh;
+  background-color: rgba(0, 0, 0, 0.481);
+}
+
+.cart div:nth-child(2) .line {
+  width: 90%;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  margin-left: 20px;
+}
+
+.cart .closeBtn {
+  width: 30px;
+  cursor: pointer;
+}
+
+.cart div:nth-child(2) .details {
+  width: 90%;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.313);
+  margin-top: 20px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+}
+
+.cart div:nth-child(2) .details div:nth-child(1) {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+}
+
+.cart div:nth-child(2) {
+  width: 30%;
+  height: 92vh;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart div:nth-child(2) .details div:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.cart div:nth-child(2) .details div:nth-child(2) p {
+  margin: 0;
+}
+
+.cart .priceOfProduct {
+  margin: 80px 0 0 80px;
+}
+
+.cart .trash {
+  width: 20px;
+  height: 20px;
+}
+
+.cart div:nth-child(2) .details div:nth-child(2) div {
+  width: 70px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart div:nth-child(2) .details div:nth-child(2) div img {
+  width: 20px;
+  height: 20px;
+}
+
+.cart div:nth-child(2) .details div:nth-child(3) {
+  height: auto;
+}
+
+.cart div:nth-child(2) .details div:nth-child(3) img {
+  width: 25px;
+}
+
+.cart div:nth-child(2) .informationBottom {
+  width: 90%;
+  height: 200px;
+  margin: 200px 0 0 20px;
+}
+
+.cart div:nth-child(2) .informationBottom .subtotal {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart div:nth-child(2) .informationBottom .subtotal h3,
+p {
+  margin: 0;
+}
+
+.cart div:nth-child(2) .informationBottom .btn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart div:nth-child(2) .informationBottom .btn p {
+  margin: 0;
+}
+
+.cart div:nth-child(2) .informationBottom .checkout {
+  background-color: #a27761;
+  color: white;
+  border: 0;
+  margin: 10px 0 20px 0;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cart div:nth-child(2) .informationBottom .checkout:hover {
+  background-color: #a07964b0;
+}
+
+.cart div:nth-child(2) .informationBottom .viewCart {
+  border: 1px solid #a27761;
+  color: #a07964;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cart div:nth-child(2) .informationBottom .viewCart:hover {
+  color: #a07964b0;
+}
+/*main*/
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.main div:nth-child(1) {
+  width: 15%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main div:nth-child(1) h1 {
+  margin: 0;
+}
+
+.main div:nth-child(1) h3 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.main div:nth-child(1) .accessoriesTxt {
+  text-decoration: underline;
+}
+
+.main div:nth-child(1) div {
+  background-color: rgba(0, 0, 0, 0.208);
+  height: 1px;
+  padding: 0;
+  width: 100%;
+}
+
+.main div:nth-child(2) {
+  width: 85%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 20px;
+}
+
+.main div:nth-child(2) div {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main div:nth-child(2) div p {
+  margin: 0;
+}
+
+.main div:nth-child(2) div div {
+  width: 90%;
+  height: 90%;
+  background-color: #a07964;
+}
+
+/*footer*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 30%;
+  background-color: #8f634d;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.footer div {
+  border-right: 1px solid black;
+}
+
+@media (max-width: 450px) {
+  .slider-track {
+    gap: 30px;
+    animation: slide 40s linear infinite;
+  }
+
+  .header2 {
+    width: 100%;
+    height: 50px;
+    background-color: #dffd19;
+    display: flex;
+    align-items: center;
+  }
+
+  .header2 h2 {
+    margin: 0 160px 0 10px;
+  }
+
+  .cart div:nth-child(1) {
+    display: none;
+  }
+
+  .cart div:nth-child(2) {
+    width: 100%;
+  }
+
+  .menu {
+    width: 100%;
+    height: 92vh;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 92vh;
+    background-color: #322c27;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu img {
+    margin-right: 300px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu p {
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .main div:nth-child(1) {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .main div:nth-child(1) h1,
+  h3 {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .main div:nth-child(1) div {
+    background-color: rgba(0, 0, 0, 0.208);
+    height: 1px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main div:nth-child(2) {
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .main div:nth-child(2) div {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .main div:nth-child(2) div p {
+    margin: 0;
+  }
+
+  .main div:nth-child(2) div div {
+    width: 90%;
+    height: 250px;
+    background-color: #a07964;
+  }
+
+  /*footer*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    border: 0;
+  }
+
+  .footer div {
+    border-top: 1px solid black;
+    border-right: 0;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+}

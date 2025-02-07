@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template5</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="fixed-header">
+      <div class="slider">
+        <div class="slider-track">
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+
+          <!-- Duplicated content for seamless loop -->
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+          <div><h3>FREE SHIPPING</h3></div>
+        </div>
+      </div>
+
+      <!-- <div class="header">
+        <div>
+          <h2 class="goToHome">ELISYAN</h2>
+          <p class="goToWomen">Women</p>
+          <p class="goToMen">Men</p>
+          <p class="goToAccessories">Accessories</p>
+          <p>Cart(0)</p>
+        </div>
+      </div> -->
+
+      <div class="header2">
+        <h2 class="goToHome">ELISYAN</h2>
+        <p>Cart(0)</p>
+        <img
+          class="menuBtn"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"
+        />
+      </div>
+    </div>
+
+    <div class="menu">
+      <img
+        class="menuCloseBtn"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAATtJREFUaEPtWEEOwyAMS37WvWz72fYzJiZVQhUtiR2VtUqvI4kdmwBTufinF8cvSWC2gqlAKkB2IC1ENpAOTwXoFpIJUgGygXQ4rEAp5SUiTxF5qOoHQRKRAyLQFF5xu0lE5KjF3QRKKYuIvDsdN5PogP+lU1U3HndALbQHwGInJrZnU4gASiIaPGShtgseQJ61noEAK7AWsQCzrPGAbtfSBEZ2EpG66eu43X7mTX9ELoTAgESvfgh4eg9skR1YpV0aBj6cgEGJUPBJ4FYWMvofvjvtTaKQKXQ05/9+jFoOKcuaKQeZB5hnrYcMbCEEEBIzIgMRYIAwsSHX6bs+aNwn7LQnZeca7QYfmQPaAw2ABf1HIioHRWA0Ic74PQmc0eVTXmSziKSFZnV+rZsKpAJkB9JCZAPp8Msr8AU9e7wxdzBSrAAAAABJRU5ErkJggg=="
+      />
+      <p class="goToWomen">Women</p>
+      <p class="goToMen">Men</p>
+      <p class="goToAccessories">Accessories</p>
+    </div>
+
+    <div class="cartTxt">
+      <h1>Cart</h1>
+    </div>
+
+    <div class="cart">
+      <div class="cartItem">
+        <div></div>
+
+        <div>
+          <h4>Stylish jacket</h4>
+          <p>$139.00</p>
+          <p>Size: <span>Medium</span></p>
+        </div>
+
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAJlJREFUaEPt0zESgCAQBEF9nK/2c6ZmQnVAUY7x7crNwHls/p2bn/9ogdUGM5ABJNAVQoAczwAjxIIMIECOZ4ARYkEGECDHM8AIsSADCJDjvzJwMa65gntkfMZAC4wQfc1kYBLYmvGZN7DmhB9/bYHVWjKQASTQFUKAHM8AI8SCDCBAjmeAEWJBBhAgxzPACLEgAwiQ49sbeACJ7QQxJACRUQAAAABJRU5ErkJggg=="
+          />
+
+          <p>1</p>
+
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAALJJREFUaEPtlkEOgCAMBOH/j9aL8UACrGxaghmvFmxnt7W1HP7Uw/MvFLBbQRRAAZMAFjIB2sdRYIDwat6FwAq59EmcApQGQQF6QPHJIAYLYSEsZBLAQibAL1OoXQ3MT0+PS7lJQZ3dZpqBGSDlJgVRwJoUElwpaO37hXVaAYcC/MgUn7BOr1FiCincmEJMIcUnTCGTUuTxyCaOzPu9mwJSMG9q4pTasFAKZiy0G/OfFbgBk3kcMd+iuKkAAAAASUVORK5CYII="
+          />
+        </div>
+
+        <p>$139.00</p>
+
+        <img
+          class="trash"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAATtJREFUaEPtWdsNwjAMvM7AOOzAODBDGYcdGIcdkJEqVVHUi1+tKpyffjh27pG0Sj3h5GM6OX4UgaMd9DpwBfAAIE/LeAKYLYlLjpfAx7P4KvcG4G2p5SEgyt8ti3ZyBLyQUA8PgSj1F9AXNXrA9RZqCWgBePN/fCMdKAK1hRoFog+pReB1TneLbp2BIuCVvMn/PwdaAUPe2xuumOprvgOmBRTbyFS/CCgUZlMPd4AB8Ma7AkRuIS9All8EmELZ8XIgW2FWvxxgCmXHy4FshVn9coAplB0vB7IVZvXLAaZQdjzdAXZhYXEmQBEwKcRkX8VN9SNvZAqs3am7E/ACZvlDv+s1DrwczTwGto0PN/80BKQTKST2GEPqCxANgQV4ZHOvFUOafdJ2He5YWgjs4cDwGkVgWKqkiad34AuT9GoxDQBDhAAAAABJRU5ErkJggg=="
+        />
+      </div>
+
+      <div class="informations">
+        <h1>Cart sumary</h1>
+        <p class="paidTaxes">Taxes and shipping already included.</p>
+        <div class="total">
+          <h1>Total</h1>
+          <h3><span>$139.00</span></h3>
+        </div>
+
+        <div class="checkout"><h2>Checkout</h2></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <h1>About us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          asperiores harum rerum autem alias distinctio dolores voluptas quas
+          error animi molestias officia, tempora tempore eaque voluptates, ea ab
+          eveniet fuga minima! Nam ab alias culpa commodi temporibus ullam
+          impedit sit!
+        </p>
+      </div>
+
+      <div>
+        <h1>Location</h1>
+        <p>
+          123 Exemple Street<br />
+          NYC, NY 12345<br />
+          exemple@mysite.com<br />
+          123-456-7890
+        </p>
+      </div>
+
+      <div>
+        <h1>Policy</h1>
+        <p>
+          Privacy Policy<br />
+          Terms & Conditions<br />
+          FAQ
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
