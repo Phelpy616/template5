@@ -74,7 +74,7 @@ try {
     window.location.href = "accessories.html";
   });
 } catch (error) {
-  console.lo;
+  console.log(error);
 }
 
 /*Go to home when clicking the logo in the header */
