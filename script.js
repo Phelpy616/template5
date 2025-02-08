@@ -78,9 +78,12 @@ try {
 }
 
 /*Go to home when clicking the logo in the header */
-const goToHome = document.querySelector(".goToHome");
-goToHome.addEventListener("click", () => {
-  window.location.href = "index.html";
+const goToHomeElements = document.querySelectorAll(".goToHome");
+
+goToHomeElements.forEach((element) => {
+  element.addEventListener("click", () => {
+    window.location.href = "index.html";
+  });
 });
 
 /*Go to respective page when one of the browse by is clicked,
@@ -154,3 +157,13 @@ if (window.innerWidth <= 450) {
     menu.classList.remove("active");
   });
 }
+
+/*Go to women, men, accessories when one of in the .menu is clicked */
+const menuRespectivePages = document.querySelectorAll(".menu p");
+console.log(menuRespectivePages);
+
+menuRespectivePages.forEach((element) =>
+  element.addEventListener("click", () => {
+    window.location.href = element.dataset.url;
+  })
+);

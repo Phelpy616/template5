@@ -66,6 +66,14 @@ body {
   background-color: #dffd19;
 }
 
+.header2 {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
 .header div {
   height: 100%;
   width: 100%;
@@ -342,6 +350,10 @@ p {
   .slider-track {
     gap: 30px;
     animation: slide 40s linear infinite;
+  }
+
+  .header {
+    display: none;
   }
 
   .header2 {
