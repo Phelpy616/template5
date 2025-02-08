@@ -15,7 +15,7 @@ const goToRespectivePage = document.querySelectorAll(
 );
 goToRespectivePage.forEach((element) => {
   element.addEventListener("click", () => {
-    window.location.href = element.dataset.url;
+    window.location.href = "womenClothing1.html";
   });
 });
 
