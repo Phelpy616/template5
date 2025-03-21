@@ -317,54 +317,6 @@ p {
   font-size: 2rem;
 }
 
-/* second part
-.secondPart {
-  width: 100%;
-  height: 90vh;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 50px;
-}
-
-.secondPart div:nth-child(1) {
-  width: 40%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #a07964;
-  border-radius: 1.5rem;
-}
-
-.secondPart div:nth-child(2) {
-  width: 40%;
-  height: 80%;
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 20px;
-}
-
-.secondPart div:nth-child(2) div {
-  width: 100%;
-  height: 100%;
-  background-color: #a07964;
-  border: none;
-  border-radius: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.secondPart div:nth-child(2) div div {
-  background-color: black;
-  width: 50px;
-  height: 50px;
-  border-radius: 0;
-} */
-
 /*shop by category text*/
 .shopByCategory {
   font-family: "Oswald";
@@ -382,14 +334,14 @@ p {
   width: 100%;
   height: 95vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: 1, auto;
   margin-top: 5px;
 }
 
 .thirdPart .shopBy {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-right: 1px solid black;
   border-top: 1px solid black;
   display: flex;
@@ -403,7 +355,7 @@ p {
 
 .thirdPart .shopBy div {
   width: 90%;
-  height: 90%;
+  height: 500px;
   background-color: #a07964;
   border: 0;
   border-radius: 1.5rem;
