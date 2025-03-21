@@ -380,14 +380,14 @@ p {
 /*third part*/
 .thirdPart {
   width: 100%;
-  height: 70vh;
+  height: 95vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1, auto;
   margin-top: 5px;
 }
 
-.thirdPart div {
+.thirdPart .shopBy {
   width: 100%;
   height: 100%;
   border-right: 1px solid black;
@@ -401,27 +401,34 @@ p {
   transition: background-color 0.2s ease-in-out;
 }
 
-.thirdPart div:not(.thirdPart div div):hover {
-  background-color: black;
-  color: white;
-}
-
-.thirdPart div h1 {
-  margin: 10px;
-}
-
-.thirdPart div div {
+.thirdPart .shopBy div {
   width: 90%;
   height: 90%;
   background-color: #a07964;
   border: 0;
   border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.thirdPart .shopBy div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thirdPart .shopBy h1 {
+  margin: 10px;
+}
+
+.thirdPart div:not(.thirdPart div div):hover {
+  background-color: black;
+  color: white;
 }
 
 /*forth part*/
 .forthPart {
   width: 100%;
-  height: 90vh;
+  height: 60vh;
   background-color: #a07964;
   display: flex;
   flex-direction: column;
@@ -576,7 +583,7 @@ p {
 
   /*third part*/
   .thirdPart {
-    height: 170vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     grid-template-columns: none;

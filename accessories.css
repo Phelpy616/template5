@@ -331,9 +331,19 @@ p {
 }
 
 .main div:nth-child(2) div div {
-  width: 90%;
-  height: 90%;
+  width: 260px;
+  height: 270px;
   background-color: #a07964;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main div:nth-child(2) div div img{
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 /*footer*/

@@ -87,16 +87,11 @@ goToHomeElements.forEach((element) => {
 });
 
 /*Go to respective page when one of the browse by is clicked,
-like; All products, women, men and accessories */
-const goToallProductsPage = document.querySelector(".allProductsPage");
+like: women, men and accessories */
 const goToWomenPage = document.querySelector(".womenPage");
 const goToMenPage = document.querySelector(".menPage");
 const goToAccessoriesPage = document.querySelector(".accessoriesPage");
 try {
-  goToallProductsPage.addEventListener("click", () => {
-    window.location.href = "allProducts.html";
-  });
-
   goToWomenPage.addEventListener("click", () => {
     window.location.href = "women.html";
   });
