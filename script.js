@@ -112,10 +112,10 @@ const shopNowBtn1 = document.querySelector(".shopNowBtn1");
 const shopNowBtn2 = document.querySelector(".shopNowBtn2");
 try {
   shopNowBtn1.addEventListener("click", () => {
-    window.location.href = "allProducts.html";
+    window.location.href = "men.html";
   });
   shopNowBtn2.addEventListener("click", () => {
-    window.location.href = "allProducts.html";
+    window.location.href = "men.html";
   });
 } catch (error) {
   console.log(error);

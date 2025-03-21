@@ -548,7 +548,7 @@ p {
 
   /*forth part*/
   .forthPart {
-    height: 25vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     padding: 20px;
