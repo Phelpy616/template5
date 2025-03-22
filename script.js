@@ -162,3 +162,9 @@ menuRespectivePages.forEach((element) =>
     window.location.href = element.dataset.url;
   })
 );
+
+//go to ConstellarWeb page
+const goBackBtn = document.querySelector('.tag div')
+goBackBtn.addEventListener('click',()=>{
+  window.location.href = 'https://constellarweb.com/'
+})
