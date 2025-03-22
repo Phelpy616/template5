@@ -18,6 +18,28 @@ body {
   height: 100%;
 }
 
+/*tag*/
+.tag{
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3000;
+  background-color: black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tag p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: white;
+}
+
+
 /* Parent container that holds both slider and header */
 .fixed-header {
   position: fixed;
@@ -281,11 +303,12 @@ p {
   border: 1px solid black;
   background-color: #ab8056;
   border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main div:nth-child(1) div {
-  display: none;
-}
+
 
 .main div:nth-child(2) {
   width: 35%;
@@ -429,6 +452,27 @@ p {
 }
 
 @media (max-width: 450px) {
+  /*tag*/
+  .tag{
+    width: auto;
+    height: auto;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 3000;
+    background-color: black;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .tag p{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: white;
+  }
+
   .slider-track {
     gap: 30px;
     animation: slide 40s linear infinite;
@@ -505,7 +549,7 @@ p {
     width: 100%;
     height: auto;
     border: 1px solid black;
-    background-color: transparent;
+    background-color: #a07964;
     border-radius: 1.5rem;
   }
 

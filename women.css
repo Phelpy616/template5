@@ -12,6 +12,28 @@ body {
   padding-top: 80px; /* Adjust this to match the header height */
 }
 
+/*tag*/
+.tag{
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3000;
+  background-color: black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tag p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  color: white;
+}
+
+
 /* Parent container that holds both slider and header */
 .fixed-header {
   position: fixed;
@@ -371,6 +393,27 @@ h3 {
 }
 
 @media (max-width: 450px) {
+ /*tag*/
+.tag{
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 3000;
+  background-color: black;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tag p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  color: white;
+}
+
   .slider-track {
     gap: 30px;
     animation: slide 40s linear infinite;
