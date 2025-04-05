@@ -657,3 +657,127 @@ p {
     padding: 10px;
   }
 }
+
+/*media query for ipads portrait*/
+@media (min-width: 451px) and (max-width: 834px){
+  .header div {
+    gap: 50px;
+  }
+
+  .header .goToWomen{
+    margin-left: auto;
+  }
+
+  /*cart*/
+.cart {
+  height: 100vh;
+}
+
+
+.cart div:nth-child(1) {
+  width: 50%;
+  height: 100%
+}
+
+.cart div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+}
+
+.cart .priceOfProduct {
+  margin: auto 0 0 auto;
+}
+
+
+.cart div:nth-child(2) .informationBottom {
+  margin: 400px 0 0 20px;
+}
+
+/*main*/
+.main div:nth-child(1) div {
+  width: 40%;
+  margin-top: 20px;
+}
+
+  /*third part*/
+.thirdPart {
+  height: auto;
+}
+
+.thirdPart .shopBy div {
+  height: 350px;
+}
+
+.forthPart div:nth-child(1) h1 {
+  font-size: 7rem;
+  text-align: center;
+}
+}
+
+/*media query for ipads landscape*/
+@media (min-width: 1024px) and (max-width: 1366px){
+/*cart*/
+.cart {
+  height: 100vh;
+}
+
+.cart div:nth-child(1) {
+  width: 60%;
+  height: 100vh;
+}
+
+.cart div:nth-child(2) {
+  width: 40%;
+  height: 100vh;
+}
+
+.cart div:nth-child(2) .details div:nth-child(2) {
+  width: 150px;
+}
+
+.cart .priceOfProduct {
+  margin: 80px 0 0 20px;
+}
+
+.cart div:nth-child(2) .informationBottom {
+  margin: 150px 0 0 20px;
+}
+
+/*third part*/
+.thirdPart {
+  height: auto;
+}
+
+.thirdPart .shopBy div {
+  height: 500px;
+}
+
+  /*forth part*/
+  .forthPart div:nth-child(1) h1 {
+    font-size: 7rem;
+  }
+}
+
+/*ipad pro 13 portrait*/
+@media (device-width: 1024px) and (device-height: 1366px){
+  /*main*/
+.main {
+  height: 95vh;
+}
+
+.main div:nth-child(1) div {
+  width: 30%;
+  margin-top: 20px;
+}
+
+/*forth part*/
+.forthPart {
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.forthPart div:nth-child(1) h1 {
+  font-size: 7rem;
+  margin: 20px 0 0 0;
+}
+}

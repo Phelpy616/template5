@@ -15,7 +15,7 @@
 body {
   margin: 0;
   padding-top: 80px;
-  height: 100%;
+  height: auto;
 }
 
 /*tag*/
@@ -473,6 +473,8 @@ p {
 
 .footer div {
   border-right: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 @media (max-width: 450px) {
@@ -537,7 +539,6 @@ p {
     width: 100%;
     height: 92vh;
     background-color: #322c27;
-    flex-direction: column;
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
@@ -663,4 +664,194 @@ p {
     box-sizing: border-box;
     padding: 10px;
   }
+}
+
+/*media query for ipads portrait*/
+@media (min-width: 451px) and (max-width: 834px){
+  .header div {
+    gap: 50px;
+  }
+
+  .header .goToWomen{
+    margin-left: auto;
+  }
+
+  /*cart*/
+.cart {
+  height: 100vh;
+}
+
+
+.cart div:nth-child(1) {
+  width: 50%;
+  height: 100%
+}
+
+.cart div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+}
+
+.cart .priceOfProduct {
+  margin: auto 0 0 auto;
+}
+
+
+.cart div:nth-child(2) .informationBottom {
+  margin: 400px 0 0 20px;
+}
+
+  /*main*/
+.main {
+  height: auto;
+}
+
+.main div:nth-child(1) {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main div:nth-child(1) img{
+  width: 100%;
+  height: auto;
+}
+
+.main div:nth-child(2) h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.main div:nth-child(2) > p {
+  line-height: 1;
+  margin: 0 0 10px 0 ;
+}
+
+.main div:nth-child(2) .dropdown {
+  width: 26.8%;
+}
+
+.main div:nth-child(2) .dropdown div{
+  padding: 0;
+}
+
+.main div:nth-child(2) .quantity {
+  width: 50%;
+  gap: 30px;
+}
+}
+
+/*media query for ipads landscape*/
+@media (min-width: 1024px) and (max-width: 1366px){
+/*cart*/
+.cart {
+  height: 100vh;
+}
+
+.cart div:nth-child(1) {
+  width: 60%;
+  height: 100vh;
+}
+
+.cart div:nth-child(2) {
+  width: 40%;
+  height: 100vh;
+}
+
+.cart div:nth-child(2) .details div:nth-child(2) {
+  width: 150px;
+}
+
+.cart .priceOfProduct {
+  margin: 80px 0 0 20px;
+}
+
+.cart div:nth-child(2) .informationBottom {
+  margin: 150px 0 0 20px;
+}
+
+  /*main*/
+.main {
+  height: auto;
+}
+
+.main div:nth-child(1) {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main div:nth-child(1) img{
+  width: 300px;
+}
+
+.main div:nth-child(2) {
+  width: 40%;
+}
+
+.main div:nth-child(2) h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.main div:nth-child(2) p {
+  width: 90%;
+  line-height: 1;
+  margin: 0 0 10px 0;
+}
+
+.main div:nth-child(2) .select {
+  width: 90%;
+}
+
+.main div:nth-child(2) .dropdown {
+  width: 34%;
+}
+
+.main div:nth-child(2) .dropdown div:nth-child(1){
+  padding: 0;
+}
+
+.main div:nth-child(2) .quantity {
+  width: 35%;
+  gap: 35px;
+}
+
+
+.main div:nth-child(2) .addToCart {
+  width: 90%;
+}
+
+.main div:nth-child(2) .buyNow {
+  width: 90%;
+}
+}
+
+/*ipad pro 13 portrait*/
+@media (device-width: 1024px) and (device-height: 1366px){
+  body{
+    height: auto;
+  }
+
+  /*footer*/
+.footer {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+}
+
+/*ipad pro 13 landscape*/
+@media (device-width: 1366px) and (device-height: 1024px){
+  body{
+    height: auto;
+  }
+
+  /*footer*/
+.footer {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 }

@@ -273,6 +273,9 @@ h3 {
 
 .footer div {
   border-right: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px;
+  
 }
 
 @media (max-width: 450px) {
@@ -474,4 +477,72 @@ h3 {
     box-sizing: border-box;
     padding: 10px;
   }
+}
+
+/*media query for ipads portrait*/
+@media (min-width: 451px) and (max-width: 834px){
+  .header div {
+    gap: 50px;
+  }
+
+  .header .goToWomen{
+    margin-left: auto;
+  }
+
+  /*cart*/
+.cart {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+}
+
+  /*cart items*/
+.cart .cartItem div:nth-child(2) {
+  width: fit-content;
+}
+
+/*cart informations & subtotal*/
+.informations {
+  width: fit-content;
+  margin-left: 50px;
+}
+
+/*footer*/
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+}
+}
+
+/*media query for ipads landscape*/
+@media (min-width: 1024px) and (max-width: 1366px){
+ body{
+  height: fit-content;
+ }
+
+  /*cart*/
+  .cart {
+    height: fit-content;
+  }
+
+  .cart .cartItem div:nth-child(2) {
+    width: fit-content;
+  }
+
+/*cart informations & subtotal*/
+.informations {
+  width: 25%;
+}
+
+/*footer*/
+.footer {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 }
