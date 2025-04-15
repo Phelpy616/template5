@@ -342,8 +342,9 @@ p {
   font-size: 6.9rem;
   font-family: "Oswald";
   font-weight: 550;
-  line-height: 1;
+  line-height: 1.2;
   margin: 0 0 0 40px;
+  padding-top: 60px;
 }
 
 .main div h3 {
